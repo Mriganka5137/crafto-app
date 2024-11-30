@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import toast from "react-hot-toast";
@@ -42,7 +41,7 @@ export default function DragDropUpload({
     <div className="mt-2">
       {previewUrl ? (
         <div className="relative rounded-lg overflow-hidden">
-          <Image
+          <img
             src={previewUrl}
             alt="Preview"
             className="w-full h-64 object-cover"
