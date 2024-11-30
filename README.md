@@ -115,8 +115,7 @@ The application uses the following endpoints:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Author
-
-Your Name - [@Mriganka5137](https://github.com/Mriganka5137)
+ [@Mriganka5137](https://github.com/Mriganka5137)
 
 ## Acknowledgments
 
