@@ -1,7 +1,8 @@
-import { useState, useCallback } from "react";
-import { FaImage, FaTimes } from "react-icons/fa";
+import Image from "next/image";
+import { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 import toast from "react-hot-toast";
+import { FaImage, FaTimes } from "react-icons/fa";
 
 interface DragDropUploadProps {
   onFileSelect: (file: File) => void;
@@ -14,8 +15,6 @@ export default function DragDropUpload({
   onClear,
   previewUrl,
 }: DragDropUploadProps) {
-  const [isDragging, setIsDragging] = useState(false);
-
   const onDrop = useCallback(
     (acceptedFiles: File[]) => {
       const file = acceptedFiles[0];
@@ -43,7 +42,7 @@ export default function DragDropUpload({
     <div className="mt-2">
       {previewUrl ? (
         <div className="relative rounded-lg overflow-hidden">
-          <img
+          <Image
             src={previewUrl}
             alt="Preview"
             className="w-full h-64 object-cover"

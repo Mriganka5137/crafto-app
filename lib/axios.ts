@@ -2,7 +2,7 @@ import axios from "axios";
 import { getAuthToken, removeAuthToken } from "./auth";
 
 const api = axios.create({
-  baseURL: "https://assignment.stage.crafto.app",
+  baseURL: process.env.NEXT_PUBLIC_API_URL!,
   headers: {
     "Content-Type": "application/json",
   },

@@ -37,6 +37,7 @@ export default function QuotesPage() {
         setTotalPages(page + 1);
       }
     } catch (error) {
+      console.error(error);
       toast.error("Failed to fetch quotes");
     } finally {
       setLoading(false);
@@ -90,7 +91,7 @@ export default function QuotesPage() {
                     {/* Quote text overlay */}
                     <div className="absolute inset-0 flex items-center justify-center p-6">
                       <p className="text-white text-lg md:text-xl font-medium text-center">
-                        "{quote.text}"
+                        &quot;{quote.text}&quot;
                       </p>
                     </div>
                   </div>

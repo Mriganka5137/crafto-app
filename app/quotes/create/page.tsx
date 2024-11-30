@@ -49,7 +49,7 @@ export default function CreateQuotePage() {
         formData.append("file", selectedFile);
 
         const uploadResponse = await fetch(
-          "https://crafto.app/crafto/v1.0/media/assignment/upload",
+          process.env.NEXT_PUBLIC_UPLOAD_URL!,
           {
             method: "POST",
             body: formData,

@@ -39,6 +39,7 @@ export default function LoginPage() {
       router.push("/quotes");
       router.refresh();
     } catch (error) {
+      console.error(error);
       toast.error("Login failed. Please try again.");
     } finally {
       setIsLoading(false);
