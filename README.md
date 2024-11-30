@@ -38,7 +38,7 @@ Before you begin, ensure you have installed:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/quote-share.git
+git clone https://github.com/Mriganka5137/quote-share.git
 cd quote-share
 ```
 
